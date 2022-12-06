@@ -1,0 +1,135 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+    /* width:100%;
+    height:100%; */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0;
+    background-color:white;
+}
+
+header {
+    height: 100px;
+    width:100%;
+    margin:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(6, 6, 24, 0.617);
+    color: lightgrey;
+}
+
+/* .header-background img {
+  margin:0;
+  display:block;
+  height:25%;
+  width:100%;
+}  */
+
+header nav ul {
+    list-style-type:none;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+    background-color:lightcyan;
+    /* font-family: Georgia, 'Times New Roman', Times, serif;
+    display: inline; */
+}
+ li {
+    float:right;
+ }
+
+ li a{
+    display: block;
+    color: darkgrey;
+    text-align:center;
+    padding:18px;
+    text-decoration: none;
+ }
+ 
+ li a:hover {
+    background-color:rgba(248, 164, 30, 0.752);
+ }
+
+main {
+    display: flex;
+    background-color:yellow;
+    flex-direction: column;
+    /* flex-wrap: wrap;
+    flex: 200px; */
+    
+}
+
+.about-me {
+    display:flex;
+    align-items: left;
+    justify-content:space-between;
+}
+
+#self {
+    width:100%;
+}
+
+#image-element {
+     flex: 1;
+}
+
+#text-element {
+    background-color:red;
+    text-align:center;
+    flex: 3;
+}
+
+/* img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}  */
+
+.image {
+flex: 1;
+}
+
+.my-work {
+    display:flex;
+    flex-direction: row;
+    background-color:blue;
+
+}
+
+.contact {
+    list-style-type:square;
+    margin: 0;
+    padding:0;
+    text-align: left;
+    background-color:lightcyan;
+}
+
+
+.contact ul li {
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+    text-align:center;
+    justify-content:space-between;
+}
+
+footer {
+    text-align:center;
+}
+
+/* section {
+    flex: 1;
+} */
+/* .my-work img {
+    display:flex;
+    height: 300px;
+    width: auto;
+} */
+
+@media screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+ }
